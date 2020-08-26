@@ -88,6 +88,7 @@ def load_audio(audio_path, mono=None, sr=None, convertOSXaliases=True):  # wrapp
 
 
 def load_melgram(file_path):
+    melgram = ""
     #auto-detect load method based on filename extension
     name, extension = os.path.splitext(file_path)
     if ('.npy' == extension):
